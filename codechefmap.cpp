@@ -28,17 +28,20 @@ int BIN(int a[100],int l,int r,int key)
 int main() {
 	// your code goes here
 	int n;
+	cout<<"Enter size:";
 	cin>>n;
 	int a[n];
+	cout<<"Enter map elements";	
 	for(int i=0;i<n;i++)
 	{
 		cin>>a[i];
 	}
 	int key;
+	cout<<"Enter key";	
 	cin>>key;
 
 	BIN(a,0,n-1,key);
-	cout<<cnt;
+	cout<<"op is "<<cnt;
 	
 	return 0;
 }
